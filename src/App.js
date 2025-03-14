@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
+import GradientGenerator from "./components/GradientGenerator";
 
 function RGBConverter() {
+  
   const [rgb, setRgb] = useState({ r: "", g: "", b: "" });
   const [hex, setHex] = useState("");
   const [color, setColor] = useState("#ffffff");
@@ -42,6 +44,13 @@ function RGBConverter() {
   return (
     <div className="container">
       <div className="card">
+      <div className="gradient-container">
+      <div className="app">
+      <h1>RGB to HEX & Gradient Generator</h1>
+      <GradientGenerator />
+      </div>
+
+      
         <h2>RGB to HEX Converter</h2>
         <div className="color-preview" style={{ backgroundColor: color }}></div>
         <div className="input-container">
@@ -54,6 +63,7 @@ function RGBConverter() {
           Convert
         </button>
         {hex && <div className="hex-display">HEX Code: <span>{hex}</span></div>}
+        </div>
       </div>
     </div>
   );

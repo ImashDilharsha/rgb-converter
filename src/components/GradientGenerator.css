@@ -1,0 +1,123 @@
+.gradient-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe, #033c6d);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin: auto;
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite, glowAnimation 2s ease-in-out infinite;
+}
+
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+  
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .color-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .color-inputs input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-color-btn {
+    padding: 8px 12px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .add-color-btn:hover {
+    background: #ff5722;
+    transform: scale(1.1);
+  }
+  
+.gradient-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gradient-options:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+  
+  .gradient-preview {
+    height: 150px;
+    border-radius: 10px;
+    margin: 15px auto;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  .gradient-preview p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+  }
+  
+  .copy-btn {
+    padding: 10px 20px;
+    background: #00c853;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 200, 83, 0.5);
+  }
+  
+  .copy-btn:hover {
+    background: #00e676;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 230, 118, 0.7);
+  }
+  
